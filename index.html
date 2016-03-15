@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>A Tale of Two Asterisks</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -35,17 +34,114 @@
 	</head>
 
 	<body>
+		<!--
+			"It was the best of times, it was the worst of times,
+			it was the age of wisdom,
+			it was the age of foolishness,
+			it was the epoch of belief,
+			it was the epoch of incredulity,
+			it was the season of Light,
+			it was the season of Darkness,
+			it was the spring of hope,
+			it was the winter of despair,
+
+			we had everything before us,
+			we had nothing before us,
+			we were all going direct to Heaven,
+			we were all going direct the other way - in short,
+			the period was so far like the present period,
+			that some of its noisiest authorities insisted on its being received,
+			for good or for evil,
+			in the superlative degree of comparison only.
+		-->
 
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section data-background="/assets/img/cover.png">
+					<h1 style="color: #fffece; background-color: rgba(102, 102, 102, .5)">A Tale of Two Asterisks</h1>
+				</section>
+
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h2>It was the best of times...</h2>
+
+					<p>The year was 1995 and Netscape was killing it.</p>
+
+					<img class="stretch" src="/assets/img/netscape.png">
+
+					<aside class="notes">
+						<ul>
+							<li>Marc Andreessen early 20's, working on a browser called Mosaic at NCSA</li>
+							<li>November 1994 Netscape Navigator availble for download (or on floppy/CD's in stores)</li>
+							<li>Codename Mozilla, which was used as its User-Agent</li>
+							<li>20% market share, 80% by 1996</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-transition="slide-in">
+					<h2>It was the worst of times...</h2>
+
+					<p>Ugh...no dynamic content, limited graphics</p>
+
+					<img class="stretch" src="/assets/img/netscape-nav-1.png">
+				</section>
+
+				<section data-transition="fade-in slide-out">
+					<h2>It was the worst of times...</h2>
+
+					<p>Ugh...no dynamic content, limited graphics</p>
+
+					<img class="stretch" src="/assets/img/ie1.gif">
+
+					<aside class="notes">
+						<ul>
+							<li>IE1 had no image support!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+				</section>
+
+				<section>
+					LiveScript, May 1995, Brendan Eich, at Netscape, 10 days, renamed to
+					Javascript at release for "Marketing" because "Java" was the react of 1995
+
+					November 1996, Netscape submitted Javascript to Ecma (European Computer Manufacturer's Association)
+
+					June 1997, Ecmascript 1st edition, Math.pow like idiots
+
+					The general intent is that an implementor should be able to use the
+					same mathematical library for ECMAScript on a given hardware platform
+					that is available to C programmers on that platform.
+
+					June 1998, 2nd edition, editorial changes mostly
+
+					Dev's were running in to a problem, string manipulation was pretty limited
+
+					indexOf, split, substring, toLowerCase, toUpperCase, length, no replace, no slice (although substring handles many of the cases)s
+
+					Dec 1999 3rd edition, better string handling, regex, now they had two problems
+
+					but they also had concat and replace among other things
+
+					4th edition never released, was originally targetted Oct 2008
+
+					Microsoft and Mozilla got in a fight about backwards compatibility
+					so the dissenters got together and formed their own subcommittee to make their own version
+					but then everyone made nice in july 2008 and came together to create the:
+
+					5th edition 2009, 10 years, killer features like...
+
+					bug fixes
+					but also JSON, strict mode, get/set, metaprogramming,
+
+					6th edition (ES2015) June 2015
+
+					7th edition (ES2016) draft version, work in progress
+
 				</section>
 
 				<section>
