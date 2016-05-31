@@ -1,0 +1,27 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name: kafka-manager-v1
+  labels:
+    app: kafka-manager
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    app: kafka-manager
+    version: v1
+  template:
+    metadata:
+      labels:
+        app: kafka-manager
+        version: v1
+    spec:
+      containers:
+        - name: kafka-manager
+          image: 'docker-artifacts.ua-ecm.com/kafka-manager:latest'
+          imagePullPolicy: Always
+          env:
+            - name: ZK_HOSTS
+              value: 'zookeeper:2181'
+          ports:
+            - containerPort: 9000

@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: kafka-manager
+spec:
+  selector:
+    app: kafka-manager
+  {% if salt['pillar.get']('kube-config:development-node-ports') %}
+  type: NodePort
+  {% endif %}
+  ports:
+    - port: 9000
+      {% if salt['pillar.get']('kube-config:development-node-ports') %}
+      nodePort: 30700
+      {% endif %}
