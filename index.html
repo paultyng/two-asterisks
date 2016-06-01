@@ -79,7 +79,17 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="/assets/img/cover.png">
-					<h1>A Tale of Two Asterisks</h1>
+					<h1 class="fragment">A Tale of Two Asterisks</h1>
+
+					<aside class="notes">
+						Javascript today is a very quickly evolving language but this wasn't
+						always the case.  The ecmascript language has come a long way
+						and part of that has been the need to adapt to current browser development
+						speed.   I'm going to take you through where it started and how we
+						got to the new  proposal process using the example of the recently accepted
+						feature, the exponentiation operator.  I'm calling this, a
+						Tale of two Asterisks
+					</aside>
 				</section>
 
 				<section data-background="/assets/img/0403.jpg">
@@ -126,11 +136,15 @@
 
 					<dl>
 						<dt class="fragment">May 1995</dt>
-						<dd class="fragment">Brendan Eich creates LiveScript at Netscape.  Renamed to Javascript at release for "Marketing" (Java was the React of 1995).</dd>
+						<dd class="fragment">Brendan Eich creates LiveScript at Netscape.  Renamed to Javascript at release for "Marketing".</dd>
 
 						<dt class="fragment">November 1996</dt>
 						<dd class="fragment">Netscape submits Javascript to ECMA (European Computer Manufacturer's Association)</dd>
 					</dl>
+
+					<aside class="notes">
+						Java was the React of 1995
+					</aside>
 				</section>
 
 				<section data-background="/assets/img/0524.jpg">
@@ -174,8 +188,8 @@
 
 						<dt class="fragment">December 1999, 3rd Edition</dt>
 						<dd class="fragment">
-							<p>Better string handling added, including adding Regex ("now they had two problems", pause for laughter).</p>
-							<p class="fragment"><code>concat</code> and <code>replace</code> added, among other things.</p>
+							<p> Regex added ("now they had two problems", pause for laughter).</p>
+							<p class="fragment">Additionally, <code>concat</code> and <code>replace</code> added.</p>
 						</dd>
 					</dl>
 				</section>
@@ -184,13 +198,13 @@
 					<h2>A little history...</h2>
 
 					<dl>
-						<dt class="fragment">October 2008, 4nd Edition</dt>
+						<dt class="fragment">October 2008, 4th Edition</dt>
 						<dd class="fragment">
 							Thats right, NINE years later.
 							<span class="fragment">Also, never released.</span>
 						</dd>
 
-						<dt class="fragment">December 2009</dt>
+						<dt class="fragment">December 2009, 5th Edition</dt>
 						<dd class="fragment">
 							<p>10 years worth of killer features:</p>
 							<ul>
@@ -208,8 +222,10 @@
 							Microsoft and Mozilla got in a fight about backwards compatibility
 							so the dissenters got together and formed their own subcommittee to
 							make their own version but then everyone made nice in july 2008
-							and came together to create the:
+							and came together to create the 5th edition.
 						</p>
+
+
 					</aside>
 				</section>
 
@@ -225,7 +241,13 @@
 					</dl>
 
 					<aside class="notes">
-						The language needs to move at the speed of browser development.
+						<p>
+							Obviously this model was not sustainable, and TC39 realized this.
+							After years of working on ES6 they decided that they need to change
+							to a yearly / agile model.  Whatever features were approved that year
+							were the new spec.
+						</p>
+						<p>The language needs to move at the speed of browser development.</p>
 					</aside>
 				</section>
 
@@ -316,7 +338,7 @@ a **= 4;
 
 							<img class="stretch" src="/assets/img/syntax.png">
 						</dd>
-						
+
 						<dt class="fragment">July 2015, Stage 3 <span class="fragment">, Candidate</span></dt>
 						<dd class="fragment">Experience with implementations</dd>
 
@@ -325,6 +347,20 @@ a **= 4;
 					</dl>
 				</section>
 
+				<section>
+					<aside class="notes">
+						The new proposal process allows the ECMAscript implentation to
+						adapt much more quickly to the changing web landscape.  At any given
+						time there are many proposals at every stage in the process.
+
+						show list?
+
+						More information can be found in the TC39 meeting notes, ES Discuss
+						mailing list or in the repos for the spec and proposals.
+
+						Any questions?
+					</aside>
+				</section>
 
 			</div>
 
